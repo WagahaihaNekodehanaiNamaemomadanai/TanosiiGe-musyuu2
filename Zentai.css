@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1e78ff;
+    min-width: 800px;
+    width: 100%;
+}
+
+#Gamen {
+    border-radius: 10px;
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(240, 244, 247, 0.446);
+}
+
+h1 {
+    margin: 0 auto;
+    color: rgb(74, 237, 229);
+    padding: 100px;
+    font-size: 60px;
+    background-image: url(Kumo.png);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: center;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    margin: 0 0 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    /*全てを等間隔に*/
+    list-style: none;
+    padding: 10px;
+}
+
+nav a {
+    background-image: url(i_HuusenG.png);
+    color: rgb(254, 254, 254);
+    position: relative;
+    top: 25px;
+    z-index: 3;
+}
+
+#HB {
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    z-index: 2;
+}
+
+#HR {
+    position: absolute;
+    top: -25px;
+    left: 215px;
+    z-index: 2;
+}
+
+#HM {
+    position: absolute;
+    top: -25px;
+    left: 405px;
+    z-index: 2;
+}
+
+#HG {
+    position: absolute;
+    top: -25px;
+    left: 595px;
+    z-index: 2;
+}
+
+main {
+    width: 700px;
+    margin: 0 auto;
+    background-color: rgb(234, 249, 252);
+    padding: 10px;
+    border: 7px double rgba(0, 0, 0, 0.611);
+    position: relative;
+}
+
+h2 {
+    width: 10cm;
+    margin: auto;
+    text-align: center;
+    border: 5px dashed #1e78ff;
+    background-color: #78e8fe8a;
+    color: rgb(65, 125, 189);
+}
+
+strong {
+    color: #fe3636;
+    background-color: #ffff3c8a;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    /*全てを等間隔に*/
+    list-style: none;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer {
+    background-color: rgb(0, 7, 5);
+    color: white;
+    width: 100%;
+}

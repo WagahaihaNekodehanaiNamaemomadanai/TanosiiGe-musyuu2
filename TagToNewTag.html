@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang=ja>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTMLタグ置換ツール</title>
+    <link rel="stylesheet" href="Zentai.css">
+</head>
+
+<body>
+    <div id=Gamen>
+        <header>
+            <h1>楽しいゲーム集</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="game.html">ゲーム集</a></li>
+                    <li><a href="kaisetu.html">概要</a></li>
+                    <li><a href="kousinrireki.html">更新履歴</a></li>
+                </ul>
+                <img src="i_HuusenB.png" width="200px" id="HB">
+                <img src="i_HuusenR.png" width="200px" id="HR">
+                <img src="i_HuusenM.png" width="200px" id="HM">
+                <img src="i_HuusenG.png" width="200px" id="HG">
+
+            </nav>
+        </header>
+
+        <main>
+            <h2>HTMLタグ置換ツール</h2>
+            <hr>
+            <p>このページではHTMLのタグを変換することができます。<br>
+                特定のタグを一括で変換したい場合にご使用ください。
+            </p>
+            <h3>使い方</h3>
+            <hr>
+            <ol>
+                <li>基となるソースコードを入力</li>
+                <li>置換したいタグを入力（この時、山括弧（<>）は必要ありません。アルファベット部分のみ入力してください）</li>
+                <li>置換後のタグを入力</li>
+                <li>出力ボタンをクリック</li>
+                <li>出力完了</li>
+            </ol>
+            <h3>基となるソースコードを入力してください</h3>
+            <hr>
+            <textarea id="ThisIsOldSourceCode" cols="96" rows="50"></textarea>
+            <h3>置換したいタグを入力してください（最大２つまで同時に置換できます）</h3>
+            <hr>
+            <p>置換したいタグ１( ＜p＞ →　＜h1＞ならp )</p>
+            <input type="text" id="OldTag1"><br>
+            <p>置換したいタグ２</p>
+            <input type="text" id="OldTag2"><br>
+            <h3>置換後のタグを入力してください</h3>
+            <hr>
+            <p>置換後のタグ１( ＜p＞ →　＜h1＞ならh1 )</p>
+            <input type="text" id="NewTag1"><br>
+            <p>置換後のタグ２</p>
+            <input type="text" id="NewTag2"><br>
+            <h3>出力ボタンを押してください</h3>
+            <hr>
+            <input type="button" value="出力" onclick="StartChangeButton()"><br>
+            <h3>置換後のコードです</h3>
+            <hr>
+            <textarea id="ThisIsNewSourceCode" cols="96" rows="50" readonly></textarea>
+        </main>
+        <br>
+    </div>
+    <footer>
+        <hr>
+        <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="game.html">ゲーム集</a></li>
+            <li><a href="kaisetu.html"> 概要</a></li>
+            <li><a href="kousinrireki.html">更新履歴</a></li>
+        </ul>
+        <small>&copy;楽しいゲーム集(仮)</small>
+    </footer>
+    <script src="TagToNewTag.js"></script>
+</body>
+
+</html>
